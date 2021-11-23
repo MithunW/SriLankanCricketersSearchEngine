@@ -3,7 +3,7 @@ from elasticsearch_dsl import Index
 import json,re,os
 import advanced_queries
 client = Elasticsearch(HOST="http://localhost",PORT=9200)
-INDEX = 'si-cricketer-index'
+INDEX = 'srilankan_cricketers_tokenized'
 
 # sinhala_popularity=['හොඳම','ජනප්‍රිය','ප්‍රචලිත','ප්‍රසිද්ධ','හොදම','ජනප්‍රියම']
 # english_popularity=['best','famous','top','most famous','toopest']
@@ -26,7 +26,7 @@ def search(search_query):
     search_fields = []
     sort_num = 0
     field_list = ["cricketerName","paragraph", "age",]
-    all_fields = ["cricketerName","bio","paragraph", "Gender", "Is", "Birth", "Age", "Star sign", "Star sign","Sports Teams","Death","Profiles"]
+    all_fields = ["cricketerName","bio","paragraph", "Gender", "Is", "Birth", "Age", "Star sign","Sports Teams","Death","Profiles"]
     final_fields = []
 
     for word in tokens:

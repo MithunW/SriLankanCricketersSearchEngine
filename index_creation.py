@@ -2,7 +2,7 @@ from elasticsearch import Elasticsearch, helpers
 from elasticsearch_dsl import Index
 import json,re,os
 client = Elasticsearch(HOST="http://localhost",PORT=9200)
-INDEX = 'lk-cricketer-index'
+INDEX = 'lka-cricketer-index'
 
 
 def createIndex():
