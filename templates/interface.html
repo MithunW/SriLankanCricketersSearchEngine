@@ -51,18 +51,17 @@
 	</hgroup>
 
 
-    <section id='song_section' class="col-md-8">
+    <section id='player_section' class="col-md-8">
 		{% for hit in hits %}
 		<article class="search-result row">
 			<div class="col-md-12">
-				<h3 style="color:darkblue;">{{ hit._source.title }}</h3>
+				<h3 style="color:darkblue;">{{ hit._source.cricketerName }}</h3>
 				<ul class="meta-search">
-					<li><i class="glyphicon glyphicon-tags"></i> <span>Cricketer- {{ hit._source.cricketerName }}</span></li>
                     <li><i class="glyphicon glyphicon-tags"></i> <span>Bio - {{ hit._source.bio }}</span></li>
-					<li><i class="glyphicon glyphicon-tags"></i> <span>Gender - {{ hit._source.gender }}</span></li>
-                    <li><i class="glyphicon glyphicon-tags"></i> <span>Is - {{ hit._source.is_ }} </span></li>
-                    <li><i class="glyphicon glyphicon-tags"></i> <span>Views - {{ hit._source.birth }} </span></li>
-                    <li><i class="glyphicon glyphicon-tags"></i> <span>About - </span></li>
+					<li><i class="glyphicon glyphicon-tags"></i> <span>Was - {{ hit._source.Was }}</span></li>
+					<li><i class="glyphicon glyphicon-tags"></i> <span>Gender - {{ hit._source.Gender }}</span></li>
+                    <li><i class="glyphicon glyphicon-tags"></i> <span>Birth - {{ hit._source.Birth }} </span></li>
+					
 				</ul>
 				<p style="white-space: pre-line">{{ hit._source.paragraph }}</p>
 			</div>
@@ -78,7 +77,7 @@
 	{% else %}
 		{% if init %}
             <head>
-            <title>Song Search</title>
+            <title>Cricketer Search</title>
             </head>
 
 
