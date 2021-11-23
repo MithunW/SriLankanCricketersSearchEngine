@@ -1,0 +1,16 @@
+cricketerName
+bio
+paragraph
+Gender
+Is
+Birth
+Age
+Star sign
+Sports Teams
+Death
+Profiles
+Was
+Education
+Politics
+Family
+Stats
