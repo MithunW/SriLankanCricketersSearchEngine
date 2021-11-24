@@ -3,7 +3,8 @@ from elasticsearch_dsl import Index
 import json,re,os
 import advanced_queries
 client = Elasticsearch(HOST="http://localhost",PORT=9200)
-INDEX = 'srilankan_cricketers_tokenized'
+# INDEX = 'srilankan_cricketers_tokenized'
+INDEX =  'lka-cricketer-index'
 
 # sinhala_popularity=['හොඳම','ජනප්‍රිය','ප්‍රචලිත','ප්‍රසිද්ධ','හොදම','ජනප්‍රියම']
 # english_popularity=['best','famous','top','most famous','toopest']
