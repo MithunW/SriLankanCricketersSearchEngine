@@ -42,11 +42,6 @@ def search(search_query):
             processed_tokens.remove(word)
             search_fields.append("Gender")
 
-        # if word.isdigit():
-        #     sort_num = int(word)
-        #     processed_tokens.remove(word)
-        #     print ('Identified sort number',sort_num)
-
         for i in range(0, 3):
             if word in synonym_list[i]:
                 print('Adding field', field_list[i], 'for ', word, 'search field list')
@@ -78,14 +73,6 @@ def search(search_query):
     else:
         query_es = advanced_queries.multi_match_agg_cross(processed_query, final_fields)
 
-    # else:
-    #     print('Range Query')
-    #     if (len(search_fields) == 0):
-    #         query_es = advanced_queries.multi_match_agg_sort_cross(processed_query, sort_num, all_fields)
-    #     elif (len(search_fields) == 2):
-    #         query_es = advanced_queries.multi_match_agg_sort_phrase(processed_query, sort_num, all_fields)
-    #     else:
-    #         query_es = advanced_queries.multi_match_agg_sort_cross(processed_query, sort_num, final_fields)
 
     print("QUERY BODY")
     print(query_es)
