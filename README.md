@@ -2,6 +2,7 @@
 # Sri Lankan Cricketer Search Engine: IR Project Report
 
 Sri Lankan Cricketers Search Engine using ElasticSearch and Python for IR Project(CS4642)
+![Annotation 2021-11-25 075636](https://user-images.githubusercontent.com/46267056/143367226-f8110959-fb69-46a4-8230-bef2f69c079e.jpg)
 
 ## Getting Start
 ### Setting up the Environment
