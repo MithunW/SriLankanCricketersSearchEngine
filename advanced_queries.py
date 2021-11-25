@@ -33,7 +33,7 @@ def multi_match_agg_phrase(query, fields=['"cricketerName"',"paragraph"]):
 				"query": query,
 				"fields": fields,
 				"operator": 'or',
-				"type": "cross_fields"
+				"type": "phrase_prefix"
 			}
 		},
 	}
